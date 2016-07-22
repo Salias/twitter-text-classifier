@@ -17,12 +17,12 @@ from sklearn.grid_search import GridSearchCV
 from sklearn.cross_validation import StratifiedKFold, KFold, train_test_split
 from sklearn.learning_curve import learning_curve
 
-from twokenize import tokenizeRawTweetText
+from libs.twokenize import tokenizeRawTweetText
 
 
 stemmer = PorterStemmer()
 stopwords_1 = set(stopwords.words('english'))
-stopwords_2 = set([word.rstrip() for word in open('stopwords.txt', 'r')])
+stopwords_2 = set([word.rstrip() for word in open('files/stopwords.txt', 'r')])
 stopwords = list(set(stopwords_1 | stopwords_2))
 
 def text_preprocessor(text):
