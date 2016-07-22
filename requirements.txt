@@ -1,0 +1,7 @@
+numpy
+pandas
+scipy
+scikit-learn
+
+twitter-text-python
+nltk
